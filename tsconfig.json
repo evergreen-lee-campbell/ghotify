@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "ES5",
+    "outDir": "dist",
+    "sourceRoot": "src",
+    "declaration": true,
+    "declarationDir": "dist/@types",
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noStrictGenericChecks": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./**/*.spec.ts", "src/_generator/**/*.ts", "src/test/**/*.ts"]
+}

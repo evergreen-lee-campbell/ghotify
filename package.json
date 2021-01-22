@@ -1,0 +1,30 @@
+{
+  "name": "ghotify",
+  "version": "1.0.0",
+  "description": "Convert text strings to Regex grapheme combinations in order to search for things your users don't know how to spell.",
+  "main": "dist/index.js",
+  "types": "dist/@types/index.d.ts",
+  "scripts": {
+    "build": "tsc --project src/_generator/tsconfig.json && node src/_generator/graphemeGraphBuilder",
+    "test": "tsc && tsc --project src/test/tsconfig.json && node src/test/test"
+  },
+  "keywords": [
+    "text",
+    "search",
+    "grapheme",
+    "regex",
+    "phonetic",
+    "phoneme",
+    "english"
+  ],
+  "author": "Lee Campbell <evergreen-lee-campbell>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.9.0",
+    "@types/prettier": "^2.1.6",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "fastest-levenshtein": "^1.0.12"
+  }
+}

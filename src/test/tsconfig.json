@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "removeComments": true,
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "target": "ES5",
+      "noStrictGenericChecks": true
+    },
+    "include": ["test.ts"]
+}
